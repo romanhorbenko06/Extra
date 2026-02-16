@@ -1,0 +1,13 @@
+name: CI
+
+on:
+  push:
+    branches: [ "main" ]
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: CI test
+        run: echo "CI works fine"
